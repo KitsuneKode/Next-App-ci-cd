@@ -24,7 +24,7 @@ jobs:
           script: |
             cd ci-cd-next-app
             git pull origin master
-            nvm use --lts
+            nvm use node
             node -v
             npm install
             npm run build 

@@ -23,7 +23,7 @@ jobs:
           port: ${{ secrets.PORT }}
           script: |
             cd ci-cd-next-app
-            git pull
+            git pull origin master
             npm install
             npm run build 
             npm start
